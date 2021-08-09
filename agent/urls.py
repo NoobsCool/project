@@ -9,5 +9,4 @@ urlpatterns = [
     path('users/', UserListCreateAPIView.as_view(), name="users"),
     path('users/<int:pk>', UserGetAPIView.as_view(), name="users-singleview"),
     path('users-edit/<int:pk>', UserRetrieveUpdateDestroyAPIView.as_view(), name="edit-users"),
-    path('login',LoginView.as_view(),name="login"),
 ]
